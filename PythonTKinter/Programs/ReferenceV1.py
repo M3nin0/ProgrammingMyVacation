@@ -4,11 +4,9 @@ janela = Tk()
 janela.title("Referências")
 
 def getInfo():
-    final = str(entryAutor.get()) + '.' + str(entryTitulo.get()) + ':' + str(entrySubT.get()) + str(entryAnopsq.get()) + '.' + 'Disponivel em:' + str(entryEndere.get()) + '.' + 'Acesso em:' + str(entryDia.get()) + str(entryMes.get()) + str(entryAno.get())
+    final = str(entryAutor.get()) + '.' + str(entryTitulo.get()) + ':' + str(entrySubT.get()) + str(entryAnopsq.get()) + '.' + 'Disponivel em:' + str(entryEndere.get()) + '.' + 'Acesso em: ' + str(entryDia.get()) + " / " + str(entryMes.get()) +" / "+ str(entryAno.get())
     lbResult['text'] = final
     return 0
-
-
 
 lbAutor = Label(janela,text='Insira o nome do autor:')
 lbAutor.place(x=150,y=58)
